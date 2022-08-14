@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">angularCOC</string>
+    <string name="title_activity_main">angularCOC</string>
+    <string name="package_name">coc.aryabhat.angular</string>
+    <string name="custom_url_scheme">coc.aryabhat.angular</string>
+</resources>
