@@ -63,3 +63,14 @@
   .dropdown a:hover {background-color: #ddd;}
   
   .show {display: block;}
+
+  .header {
+    height: 50px;
+    background: #337ab7;
+    font-size: larger;
+    color: white;
+    label {
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+}

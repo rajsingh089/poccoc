@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .coc_title {
@@ -31,4 +31,7 @@
     width: 200px;
 }
 
-
+.header {
+    height: 50px;
+    background: #337ab7;
+}

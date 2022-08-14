@@ -19,8 +19,8 @@ export class BeginComponent implements OnInit {
   mapRef?: ElementRef<HTMLElement>;
 
   title = 'My first AGM project';
-  lat = 51.678418;
-  lng = 7.809007;
+  lat = 20.4625;
+  lng = 85.8830;
   base64Image: string | undefined;
 
   //Constructor Required
@@ -29,7 +29,6 @@ export class BeginComponent implements OnInit {
 
   async createMap() {
     const x = this.mapRef?.nativeElement;
-    alert( x?.tagName)
     if (x) {
       this.newMap = await GoogleMap.create({
         id: 'my-cool-map',
@@ -40,10 +39,9 @@ export class BeginComponent implements OnInit {
             lat: this.lat,
             lng: this.lng,
           },
-          zoom: 4,
+          zoom: 14,
         },
       }, (v)=> {
-        alert(v.mapId)
       }
       );
     }
@@ -51,7 +49,10 @@ export class BeginComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    
+    setTimeout(() => {
+      const m = this.createMap();
+      
+    }, 500);
   }
 
   // const takePicture = async () => {
