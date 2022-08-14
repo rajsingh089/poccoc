@@ -1,0 +1,34 @@
+.coc_home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.coc_title {
+    font-size: 25px;
+    text-align: center;
+}
+
+.coc_image_div {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+
+.coc_button_div {
+    text-align: center;
+    margin: 20px;
+}
+
+.coc_button {
+    width: 80%;
+    height: 40px;
+}
+
+.coc_image {
+    height: 200px;
+    width: 200px;
+}
+
+

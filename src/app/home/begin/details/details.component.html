@@ -1,0 +1,40 @@
+
+
+<div class="begin_label">
+    <label for="dropdwn">Select Category</label>
+    
+<select id="dropdwn" name="cars" class="begin_select" style="width: 80%;">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+</div>
+
+  <div class="begin_label">
+    <label for="subdropdwn">Select Sub Category</label>
+    
+<select id="subdropdwn" name="cars" class="begin_select"  style="width: 80%;">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+</div>
+
+<div class="begin_label">
+    <label for="descarea" >Enter Description</label>
+
+<textarea name="desc" id="descarea" cols="30" rows="10"  style="width: 80%; height: 300px;"></textarea>
+</div>
+
+<div style="height: 150px;"></div>
+
+<div class="begin_buttons">
+    <div class="coc_button_div">
+        <button class="btn btn-primary" role="button" style="width: 150px; height: 40px;" (click)="onBack()">Back</button>
+    </div>
+    <div class="coc_button_div">
+        <button class="btn btn-primary" role="button" style="width: 150px; height: 40px;" (click)="onSubmit()" >Submit</button>
+    </div>
+</div>
