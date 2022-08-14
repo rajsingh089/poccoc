@@ -70,3 +70,19 @@ capacitor-google-maps {
   .dropdown a:hover {background-color: #ddd;}
   
   .show {display: block;}
+
+  capacitor-google-map {
+    display: inline-block;
+    width: 275px;
+    height: 275px;
+  }
+  .header {
+    height: 50px;
+    background: #337ab7;
+    font-size: larger;
+    color: white;
+    label {
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+}

@@ -1,17 +1,17 @@
-<div class="begin_label">
+<div class="header"><label>Begin</label></div>
+
+<div class="begin_label" *ngIf="!captureImage">
     <label for="map">Current Location</label>
 </div>
-<div class="map_div">
-    <img [src]="imageSrc" [alt]="imageAlt" style="width: 300px; height: 200px;"/>
-    <!-- <capacitor-google-map id="map" style="width: 400px; h"></capacitor-google-map> -->
-<!-- <button (click)="createMap()">Create Map</button> -->
+<div class="map_div"  *ngIf="!captureImage">
+    <capacitor-google-map #map></capacitor-google-map> 
 </div>
 
 <div class="begin_label">
     <label for="camera">Click Picture</label>
 </div>
 <div>
-    <img *ngIf="captureImage" [src]="captureImage" style="height:400px">
+    <img *ngIf="captureImage" [src]="captureImage" style="height:400px; width: 300px;">
 </div>
 <div style="padding-left: 20px; ">
     <button class="btn btn-success" (click)="takePicture()"> Take picture</button>
@@ -20,7 +20,7 @@
 <div style="padding-left: 20px; margin-top: 5px ">
 <button class="btn btn-default" (click)="onBack()"> Cancel</button>
 </div>
-<div class="begin_buttons" *ngIf="captureImage">
+<div class="begin_buttons">
     <div class="coc_button_div">
         <button class="btn btn-primary" role="button" style="width: 150px; height: 40px;" (click)="onBack()">Back</button>
     </div>
@@ -28,5 +28,6 @@
         <button class="btn btn-primary" role="button" style="width: 150px; height: 40px;" (click)="onNext()" >Next</button>
     </div>
 </div>
+
 
 

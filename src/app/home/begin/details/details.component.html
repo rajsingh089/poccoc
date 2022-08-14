@@ -1,40 +1,62 @@
+<div>
+    <div class="header"><label >Details</label></div>
 
-
-<div class="begin_label">
-    <label for="dropdwn">Select Category</label>
+    <div class="begin_label">
+        <label for="dropdwn">Select Category</label>
+        
+    <select id="dropdwn" name="cars" class="begin_select" style="width: 80%; font-size: medium;">
+        <option value="volvo">Sweeping</option>
+        <option value="Drain Cleaning">Drain Cleaning</option>
+        <option value="fiat">Lifting of Garbage</option>
+        <option value="audi">Door to Door collection by LCV</option>
+        <option value="audi">Door to Door collection by BOV</option>
     
-<select id="dropdwn" name="cars" class="begin_select" style="width: 80%;">
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi">Audi</option>
-  </select>
-</div>
-
-  <div class="begin_label">
-    <label for="subdropdwn">Select Sub Category</label>
+        <option value="audi">Bin point check</option>
     
-<select id="subdropdwn" name="cars" class="begin_select"  style="width: 80%;">
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi">Audi</option>
-  </select>
-</div>
-
-<div class="begin_label">
-    <label for="descarea" >Enter Description</label>
-
-<textarea name="desc" id="descarea" cols="30" rows="10"  style="width: 80%; height: 300px;"></textarea>
-</div>
-
-<div style="height: 150px;"></div>
-
-<div class="begin_buttons">
-    <div class="coc_button_div">
-        <button class="btn btn-primary" role="button" style="width: 150px; height: 40px;" (click)="onBack()">Back</button>
+        <option value="audi">CT & PT</option>
+    
+        <option value="audi">Tractor</option>
+        <option value="audi">Cesspool vehicle</option>
+        <option value="audi">Civil Infrastructure</option>
+        <option value="audi">Smell from MCC</option>
+    
+      </select>
     </div>
-    <div class="coc_button_div">
-        <button class="btn btn-primary" role="button" style="width: 150px; height: 40px;" (click)="onSubmit()" >Submit</button>
+    
+      <div class="begin_label">
+        <label for="subdropdwn">Select Sub Category</label>
+        
+    <select id="subdropdwn" name="cars" class="begin_select"  style="width: 80%; font-size: medium;">
+        <option value="volvo">Birth & Death</option>
+        <option value="saab">Mosquito Control (NVBDCP)</option>
+        <option value="fiat">Food Safety activities</option>
+        <option value="audi">Public health activities</option>
+        <option value="audi">Holding tax</option>
+        <option value="audi">Trade Licensing and parking</option>
+        <option value="audi">Enforcement</option>
+        <option value="audi">Establishment</option>
+        <option value="audi">Poverty Alleviation</option>
+        <option value="audi">Emergency</option>
+        <option value="audi">Nursing Home</option>
+        <option value="audi">Vending Zone</option>
+        <option value="audi">Swachha Survekhyana & Other  survey</option>
+      </select>
+    </div>
+    
+    <div class="begin_label">
+        <label for="descarea" >Enter Description</label>
+    
+    <textarea name="desc" id="descarea" cols="30" rows="10"  style="width: 80%; height: 200px;"></textarea>
+    </div>
+    
+    <!-- <div style="height: 100px;"></div> -->
+    
+    <div class="begin_buttons">
+        <div class="coc_button_div">
+            <button class="btn btn-primary" role="button" style="width: 150px; height: 40px;" (click)="onBack()">Back</button>
+        </div>
+        <div class="coc_button_div">
+            <button class="btn btn-primary" role="button" style="width: 150px; height: 40px;" (click)="onSubmit()" >Submit</button>
+        </div>
     </div>
 </div>
